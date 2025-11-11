@@ -3,73 +3,122 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Estructura de Datos - Página del Curso</title>
+    <title>Estructura de Datos - Futurista</title>
     <style>
+        /* Fondo general */
         body {
-            font-family: 'Segoe UI', sans-serif;
             margin: 0;
-            background: #f3f3f3;
+            font-family: 'Orbitron', Arial, sans-serif;
+            background: radial-gradient(circle at center, #0a0f24 0%, #000 100%);
+            color: #e0e0e0;
+            overflow-x: hidden;
         }
 
+        /* Encabezado */
         header {
-            background: #003366;
-            color: white;
             text-align: center;
-            padding: 20px;
+            padding: 40px 10px;
+            background: linear-gradient(90deg, #002b80, #0059ff, #00d4ff);
+            color: white;
+            text-shadow: 0 0 10px #00ffff;
+            box-shadow: 0 0 20px #00bfff;
         }
 
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+            letter-spacing: 2px;
+        }
+
+        header p {
+            margin: 5px 0 0;
+            font-size: 1rem;
+            color: #cdeaff;
+        }
+
+        /* Menú */
         nav {
-            background: #0059b3;
             display: flex;
             justify-content: center;
-            flex-wrap: wrap;
+            background-color: rgba(0, 50, 150, 0.3);
+            backdrop-filter: blur(8px);
+            box-shadow: 0 0 10px #00bfff;
+            border-bottom: 1px solid #00ffff33;
         }
 
         nav a {
-            color: white;
+            color: #00ffff;
             text-decoration: none;
-            padding: 15px 20px;
-            display: block;
-            transition: background 0.3s;
+            padding: 15px 25px;
+            font-weight: bold;
+            letter-spacing: 1px;
+            transition: 0.3s;
         }
 
         nav a:hover {
-            background: #0073e6;
+            background-color: #00bfff33;
+            box-shadow: 0 0 10px #00ffff;
+            color: white;
         }
 
+        /* Secciones */
         section {
-            background: white;
-            margin: 20px auto;
-            padding: 20px;
-            border-radius: 10px;
             max-width: 900px;
-            box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+            margin: 50px auto;
+            background: rgba(0, 30, 80, 0.4);
+            border-radius: 15px;
+            padding: 30px;
+            box-shadow: 0 0 20px #00ffff44;
+            backdrop-filter: blur(10px);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        section:hover {
+            transform: scale(1.02);
+            box-shadow: 0 0 25px #00ffff88;
         }
 
         h2 {
-            color: #003366;
-            border-bottom: 2px solid #0073e6;
-            padding-bottom: 5px;
+            color: #00ffff;
+            border-bottom: 1px solid #00ffff44;
+            padding-bottom: 8px;
         }
 
         ul {
             line-height: 1.8;
         }
 
+        strong {
+            color: #00bfff;
+        }
+
+        /* Footer */
         footer {
             text-align: center;
-            background: #003366;
-            color: white;
-            padding: 10px;
-            margin-top: 40px;
+            color: #00ffff;
+            padding: 20px;
+            background-color: rgba(0, 50, 150, 0.2);
+            border-top: 1px solid #00ffff33;
+            font-size: 0.9rem;
+            letter-spacing: 1px;
+        }
+
+        /* Efecto neón animado */
+        @keyframes glow {
+            0%, 100% { text-shadow: 0 0 10px #00ffff; }
+            50% { text-shadow: 0 0 20px #00bfff, 0 0 40px #00ffff; }
+        }
+
+        h1, h2 {
+            animation: glow 2s infinite;
         }
     </style>
 </head>
 <body>
 
     <header>
-        <h1>💻 Estructura de Datos</h1>
-        <p>Proyecto web hecho por un estudiante 😉</p>
+        <h1>⚡ ESTRUCTURA DE DATOS ⚡</h1>
+        <p>Proyecto Futurista - Universidad ESPOCH</p>
     </header>
 
     <nav>
@@ -81,46 +130,47 @@
 
     <section id="unidad1">
         <h2>Unidad 1: Fundamentos e Introducción</h2>
-        <p><strong>Objetivo:</strong> Comprender los conceptos básicos de las estructuras de datos.</p>
+        <p><strong>Objetivo:</strong> Comprender los fundamentos y tipos de estructuras de datos.</p>
         <ul>
             <li>Historia y características</li>
-            <li>Tipos de datos (primitivos, compuestos, abstractos)</li>
+            <li>Tipos de datos: primitivos, compuestos, abstractos</li>
             <li>Vectores, matrices y registros</li>
-            <li>Conceptos de algoritmos y su representación</li>
+            <li>Concepto y representación de algoritmos</li>
         </ul>
     </section>
 
     <section id="unidad2">
         <h2>Unidad 2: Estructuras Lineales</h2>
-        <p><strong>Objetivo:</strong> Aplicar listas, pilas y colas para resolver problemas simples.</p>
+        <p><strong>Objetivo:</strong> Analizar y aplicar estructuras lineales para resolver problemas computacionales.</p>
         <ul>
-            <li>Pilas: operaciones y usos</li>
-            <li>Colas: tipos y aplicaciones</li>
-            <li>Listas: nodos, tipos y operaciones</li>
+            <li>Pilas: definición, operaciones, usos</li>
+            <li>Colas: tipos, operaciones, aplicaciones</li>
+            <li>Listas: nodos, tipos, representación</li>
         </ul>
     </section>
 
     <section id="unidad3">
         <h2>Unidad 3: Estructuras No Lineales</h2>
-        <p><strong>Objetivo:</strong> Trabajar con árboles y grafos para manejar datos más complejos.</p>
+        <p><strong>Objetivo:</strong> Trabajar con árboles y grafos para modelar relaciones complejas.</p>
         <ul>
-            <li>Árboles: definición, recorrido y métodos</li>
-            <li>Grafos: tipos, propiedades y ejemplos</li>
+            <li>Visualización de algoritmos</li>
+            <li>Árboles: recorrido y métodos</li>
+            <li>Grafos: tipos y propiedades</li>
         </ul>
     </section>
 
     <section id="unidad4">
         <h2>Unidad 4: Búsqueda y Ordenamiento</h2>
-        <p><strong>Objetivo:</strong> Conocer los algoritmos más comunes para buscar y ordenar datos.</p>
+        <p><strong>Objetivo:</strong> Aplicar métodos de búsqueda y ordenamiento en estructuras de datos.</p>
         <ul>
-            <li>Análisis de algoritmos (complejidad Big O)</li>
+            <li>Análisis de algoritmos (Big O, eficiencia)</li>
             <li>Ordenamientos: Burbuja, Quicksort, Mergesort</li>
             <li>Búsquedas: Secuencial, Binaria, Hash</li>
         </ul>
     </section>
 
     <footer>
-        <p>👨‍💻 Desarrollado por un estudiante de TI - ESPOCH 2025</p>
+        <p>👾 Página creada por un estudiante de TI | ESPOCH 2025 👾</p>
     </footer>
 
 </body>
